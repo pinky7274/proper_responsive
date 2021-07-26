@@ -1,0 +1,135 @@
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+    
+    .parent {
+        height: 100vh;
+        width: 100%;
+        background: brown;
+        box-sizing: border-box;
+        display: flex;
+    }
+    
+    .child-1 {
+        width: 50%;
+        background: cyan;
+        text-align: center;
+    }
+    
+    .child-1 h1 {
+        padding: 20rem 10rem;
+        font-size: 4rem;
+        font-family: cursive;
+    }
+    
+    .child-1 a {
+        padding: 0rem 0rem;
+        font-size: 3rem;
+        font-family: cursive;
+        text-decoration: none;
+        letter-spacing: 2px;
+    }
+    
+    .child-2 {
+        width: 50%;
+        background: chartreuse;
+    }
+    
+    .child-2 img {
+        padding: 5rem 3rem 0rem 8rem;
+        left: 12.5%;
+        position: relative;
+        justify-content: space-around;
+        width: 70%;
+        height: 45%;
+        align-items: center;
+        background: chartreuse;
+    }
+    
+    @media(max-width:484px) {
+        .child-1 a {
+            font-size: 2rem;
+            word-break: break-all;
+            transition: .3s ease;
+        }
+        .child-2 {
+            width: 50%;
+        }
+        .child-2 img {
+            left: 10%;
+            position: relative;
+            padding-left: 2rem;
+            padding-right: 6rem;
+        }
+    }
+    
+    @media(max-width:490px) {
+        .child-1 a {
+            font-size: 2rem;
+            word-break: break-all;
+            transition: .3s ease;
+        }
+        .child-2 img {
+            left: 15%;
+            position: relative;
+            padding-left: 7rem;
+        }
+    }
+    
+    @media(max-width:984px) {
+        .parent {
+            display: block;
+        }
+        .child-1 {
+            width: auto;
+            height: auto;
+            background: cyan;
+        }
+        .child-1 h1 {
+            height: auto;
+            padding: 10rem 3rem;
+            text-align: center;
+        }
+        .child-2 {
+            width: 100%;
+            height: auto;
+            background: chartreuse;
+        }
+        .child-2 img {
+            width: 70%;
+            height: 30%;
+            justify-content: space-around;
+            padding-left: 11rem;
+        }
+        .child-2 #img-2 {
+            padding-bottom: 5rem;
+        }
+    }
+    
+    @media(max-width:1024px) {
+        .child-1 {
+            width: auto;
+            height: auto;
+            background: cyan;
+        }
+        .child-1 h1 {
+            height: auto;
+            padding: 10rem 3rem;
+            text-align: center;
+        }
+        .child-1 a {
+            font-size: 3rem;
+            font-family: cursive;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+        .child-2 img {
+            left: 0%;
+            position: relative;
+            width: 90%;
+            justify-content: space-around;
+        }
+    }
